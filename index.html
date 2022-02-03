@@ -382,10 +382,15 @@
         </div>
         <div class="subscribe-column">
           <p class="text">Подпишитесь на рассылку</p>
-          <form name="subscribe" action="">
-            <input type="email" name="subscribe-email" id="subscribe-email" />
-            <label for="subscribe-email">E-mail</label>
-            <button type="submit">Подписаться</button>
+          <form class="subscribe-form" name="subscribe" action="">
+            <input
+              class="subscribe-form-input"
+              type="email"
+              name="subscribe-email"
+              id="subscribe-email"
+            />
+            <label class="subscribe-form-label" for="subscribe-email">E-mail</label>
+            <button class="subscribe-form-button" type="submit">Подписаться</button>
           </form>
         </div>
       </div>
@@ -393,25 +398,45 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close button" data-modal-close>
-          <svg width="18" height="18">
+          <svg class="close-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-close-blackdrop"></use>
           </svg>
         </button>
-        <form name="modal-form">
-          <h2 class="form-title title">Оставьте свои данные, мы вам перезвоним</h2>
-          <label for="modal-form-name">Имя</label>
-          <input type="text" name="modal-form-name" id="modal-form-name" />
-          <label for="modal-form-phone">Телефон</label>
-          <input type="tel" name="modal-form-phone" id="modal-form-phone" />
-          <label for="modal-form-email">Почта</label>
-          <input type="modal-form-email" name="modal-form-email" id="modal-form-email" />
-          <label for="modal-form-comment">Комментарий</label>
-          <textarea name="modal-form-coment" id="modal-form-coment" rows="10"></textarea>
-          <input type="checkbox" name="modal-form-agree" id="agree" />
-          <label for="modal-form-agree"
-            >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
+        <form class="modal-form" name="modal-form">
+          <h2 class="modal-form-title title">Оставьте свои данные, мы вам перезвоним</h2>
+          <label class="modal-form-label" for="modal-form-name">Имя</label>
+          <input class="modal-form-input" type="text" name="modal-form-name" id="modal-form-name" />
+
+          <label class="modal-form-label" for="modal-form-phone">Телефон</label>
+          <input
+            class="modal-form-input"
+            type="tel"
+            name="modal-form-phone"
+            id="modal-form-phone"
+          />
+
+          <label class="modal-form-label" for="modal-form-email">Почта</label>
+          <input
+            class="modal-form-input"
+            type="modal-form-email"
+            name="modal-form-email"
+            id="modal-form-email"
+          />
+
+          <label class="modal-form-label" for="modal-form-comment">Комментарий</label>
+          <textarea
+            class="modal-form-textarea"
+            name="modal-form-comment"
+            id="modal-form-comment"
+            placeholder="Введите текст"
+            rows="10"
+          ></textarea>
+
+          <input class="modal-form-checkbox" type="checkbox" name="modal-form-agree" id="agree" />
+          <label class="modal-form-checkbox-label" for="modal-form-agree"
+            >Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label
           >
-          <button type="submit">Отправить</button>
+          <button class="modal-form-button button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
