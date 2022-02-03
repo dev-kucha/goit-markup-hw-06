@@ -648,21 +648,21 @@ ul {
 
 .backdrop {
   position: fixed;
-  /* visibility: visible; */
+  visibility: visible;
   opacity: 1;
   width: 100vw;
   height: 100vh;
   left: 0px;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.2);
-  transition-property: opacity;
+  transition-property: opacity, visibility;
   transition-duration: var(--transfotmation-time);
   transition-timing-function: var(--tranformation-function);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
-  /* visibility: hidden; */
+  visibility: hidden;
   pointer-events: none;
 }
 
