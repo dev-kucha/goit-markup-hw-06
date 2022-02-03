@@ -380,6 +380,14 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-column">
+          <p class="text">Подпишитесь на рассылку</p>
+          <form name="subscribe" action="">
+            <input type="email" name="subscribe-email" id="subscribe-email" />
+            <label for="subscribe-email">E-mail</label>
+            <button type="submit">Подписаться</button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -389,6 +397,22 @@
             <use href="./images/icons.svg#icon-close-blackdrop"></use>
           </svg>
         </button>
+        <form name="modal-form">
+          <h2 class="form-title title">Оставьте свои данные, мы вам перезвоним</h2>
+          <label for="modal-form-name">Имя</label>
+          <input type="text" name="modal-form-name" id="modal-form-name" />
+          <label for="modal-form-phone">Телефон</label>
+          <input type="tel" name="modal-form-phone" id="modal-form-phone" />
+          <label for="modal-form-email">Почта</label>
+          <input type="modal-form-email" name="modal-form-email" id="modal-form-email" />
+          <label for="modal-form-comment">Комментарий</label>
+          <textarea name="modal-form-coment" id="modal-form-coment" rows="10"></textarea>
+          <input type="checkbox" name="modal-form-agree" id="agree" />
+          <label for="modal-form-agree"
+            >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
+          >
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

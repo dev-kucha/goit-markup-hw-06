@@ -622,7 +622,8 @@ ul {
 .footer .link:focus {
   color: var(--white-text-color);
 }
-.social-column .text {
+.social-column .text,
+.subscribe-column .text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -645,6 +646,8 @@ ul {
 .footer .item-social-link:focus {
   background-color: var(--accent-color);
 }
+
+/* backdrop */
 
 .backdrop {
   position: fixed;
@@ -684,6 +687,7 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
 
 .close {
@@ -698,4 +702,20 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--white-text-color);
+}
+
+/* form */
+
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
 }
