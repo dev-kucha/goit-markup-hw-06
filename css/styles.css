@@ -736,6 +736,29 @@ a {
   margin-bottom: 4px;
 }
 
+.modal-form-input-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal-form-input-container:focus-within .modal-form-input-icon {
+  color: var(--accent-color);
+  transition-property: color;
+  transition-duration: var(--transfotmation-time);
+  transition-timing-function: var(--tranformation-function);
+}
+
+.modal-form-input-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: var(--title-text-color);
+  fill: currentColor;
+}
+
 .modal-form-input,
 .modal-form-textarea {
   width: 100%;
@@ -748,10 +771,11 @@ a {
 
 .modal-form-input {
   height: 40px;
-  margin-bottom: 10px;
+  padding-left: 42px;
 }
 
 .modal-form-textarea {
+  resize: none;
   margin-bottom: 20px;
 }
 .modal-form-textarea::placeholder {
@@ -764,9 +788,50 @@ a {
 .modal-form-input:focus,
 .modal-form-textarea:focus {
   border: 1px solid #2196f3;
+  transition-property: border;
+  transition-duration: var(--transfotmation-time);
+  transition-timing-function: var(--tranformation-function);
+}
+
+.modal-form-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.modal-form-custom-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
+  border: 1px var(--title-text-color) solid;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0);
+}
+
+.modal-form-checkbox:focus + .modal-form-checkbox-label .modal-form-custom-checkbox {
+  border: 1px solid #2196f3;
+}
+
+.modal-form-checkbox:checked + .modal-form-checkbox-label .modal-form-custom-checkbox {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.modal-form-checkbox-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 .modal-form-checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
