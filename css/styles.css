@@ -825,6 +825,7 @@ a {
 }
 
 .modal-form-textarea {
+  height: 120px;
   resize: none;
   margin-bottom: 20px;
 }
